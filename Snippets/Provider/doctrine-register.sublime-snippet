@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+\$app->register(new Silex\Provider\DoctrineServiceProvider(), array(
+    'db.options' => array(
+        'driver'   => '$1',
+        'dbname'   => '$2',
+        'host'     => '$3',
+        'user'     => '$4',
+        'password' => '$5',
+    ),
+));
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>sidoctrinere</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Register Doctrine Service Provider for Silex</description>
+</snippet>
+
+
+

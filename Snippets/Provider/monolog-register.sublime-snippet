@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+\$app->register(new Silex\Provider\MonologServiceProvider(), array(
+    'db.options' => array(
+        'monolog.logfile' => '$1',
+        'monolog.level' => '$2',
+        'monolog.name' => '$3',
+    ),
+));
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>simonologre</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Register Monolog Service Provider for Silex</description>
+</snippet>
+
+
+
