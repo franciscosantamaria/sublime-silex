@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+\$app->before(function (Request \$request) {
+    $1
+}
+);
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>sibefore</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>BEFORE middleware for Silex Controller</description>
+</snippet>

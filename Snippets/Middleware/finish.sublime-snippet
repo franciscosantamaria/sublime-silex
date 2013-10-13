@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+\$app->finish(function (Request \$request, Response \$response) {
+    $1
+}
+);
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>sifinish</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>FINISH middleware for Silex Controller</description>
+</snippet>
