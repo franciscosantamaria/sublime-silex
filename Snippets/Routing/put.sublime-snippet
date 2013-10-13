@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+\$app->put('$1', function () use (\$app) {
+    $2
+}
+);
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>siput</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>PUT method for Silex Controller</description>
+</snippet>
