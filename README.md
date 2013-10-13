@@ -1,6 +1,6 @@
 #Sublime-Silex
 
-This is a Sublime Text package with useful snippets for Silex, the PHP micro-framework.
+This is a Sublime Text package with useful snippets for [Silex](http://silex.sensiolabs.org), the PHP micro-framework.
 
 ##How to install##
 
