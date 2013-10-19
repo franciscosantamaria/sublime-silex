@@ -125,12 +125,51 @@ $app->register(new Silex\Provider\MonologServiceProvider(), array(
 ));
 ```
 
+`siserializerre`
+
+```php
+$app->register(new Silex\Provider\SerializerServiceProvider());
+```
+
+`sisessionre`
+
+```php
+$app->register(new Silex\Provider\SessionServiceProvider());
+```
+
+`simailerre`
+
+```php
+$app->register(new Silex\Provider\SwiftmailerServiceProvider(), array(
+    'swiftmailer.options' => array(
+            'host' => '',
+            'port' => '',
+            'username' => '',
+            'password' => '',
+            'encryption' => ,
+            'auth_mode' => ,
+    ),
+));
+```
+
 `sitwigre`
 
 ```php
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => '',
 ));
+```
+
+`siurlgere`
+
+```php
+$app->register(new Silex\Provider\UrlGeneratorServiceProvider());
+```
+
+`sivalre`
+
+```php
+$app->register(new Silex\Provider\ValidatorServiceProvider());
 ```
 
 ###Services###
