@@ -3,7 +3,7 @@
 \$app->register(new Silex\Provider\UrlGeneratorServiceProvider());
 ]]></content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>siurlsere</tabTrigger>
+    <tabTrigger>siurlgere</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>source.php</scope>
     <!-- Optional: Description to show in the menu -->
