@@ -1,0 +1,23 @@
+<snippet>
+    <content><![CDATA[
+\$app->register(new Silex\Provider\SwiftmailerServiceProvider(), array(
+    'swiftmailer.options' => array(
+            'host' => '${1:localhost}',
+            'port' => '${2:25}',
+            'username' => '$3',
+            'password' => '$4',
+            'encryption' => ${5:null},
+            'auth_mode' => ${6:null},
+    ),
+));
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>simailerre</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Register Swiftmailer Service Provider for Silex</description>
+</snippet>
+
+
+
