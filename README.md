@@ -198,6 +198,39 @@ $app['monolog']->addInfo('');
 $app['monolog']->addWarning('');
 ```
 
+####Serializer####
+`siserialize`
+
+```php
+$app['serializer']->serialize(,'');
+```
+
+`sideserialize`
+
+```php
+$app['serializer']->deserialize(,'','');
+```
+
+####Session####
+`siseget`
+
+```php
+$app['session']->get('');
+```
+
+`siseset`
+
+```php
+$app['session']->set('',);
+```
+
+####Swiftmailer####
+`simailsend`
+
+```php
+$app['mailer']->send();
+```
+
 ####Twig####
 `sitwig`
 
@@ -206,6 +239,14 @@ $app['twig']->render('',array(
     '' => '',
 ));
 ```
+
+####UrlGenerator####
+`siurlgen`
+
+```php
+app['url_generator']->generate('',array('' => ''));
+```
+
 ##Contribute##
 
 If you have seen mistakes or want to add new snippets, feel free to fork the project and make any pull request you want.
