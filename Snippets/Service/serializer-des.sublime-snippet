@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+\$app['serializer']->deserialize($1,'$2','${3:xml|json}');
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>sideserialize</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Deserialize data to appropriate object and format using serializer Service provided by Silex.</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+\$app['session']->set('${1}',$2);
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>siseset</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Store a value in the session provided by Silex.</description>
+</snippet>
