@@ -117,12 +117,11 @@ $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
 
 ```php
 $app->register(new Silex\Provider\MonologServiceProvider(), array(
-    'db.options' => array(
         'monolog.logfile' => '',
         'monolog.level' => '',
         'monolog.name' => '',
-    ),
-));
+    )
+);
 ```
 
 `siserializerre`
