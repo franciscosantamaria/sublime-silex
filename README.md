@@ -151,6 +151,14 @@ $app->register(new Silex\Provider\SwiftmailerServiceProvider(), array(
 ));
 ```
 
+`sitransre`
+
+```php
+$app->register(new Silex\Provider\TranslationServiceProvider(), array(
+    'locale_fallbacks' => array('en'),
+));
+```
+
 `sitwigre`
 
 ```php
@@ -228,6 +236,15 @@ $app['session']->set('',);
 
 ```php
 $app['mailer']->send();
+```
+
+####Translation####
+`sitrans`
+
+```php
+$app['translator']->trans($message,array(
+    '' => '',
+    ));
 ```
 
 ####Twig####
