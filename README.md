@@ -19,7 +19,7 @@ You can also make a clone of the repository into your packages folder:
 
 ###Routing###
 
-`siget`
+`siget` GET route.
 
 ```php
 $app->get('', function () use ($app) {
@@ -29,7 +29,7 @@ $app->get('', function () use ($app) {
 
 ```
 
-`sipost`
+`sipost` POST route.
 
 ```php
 $app->post('', function () use ($app) {
@@ -39,7 +39,7 @@ $app->post('', function () use ($app) {
 
 ```
 
-`siput`
+`siput` PUT route.
 
 ```php
 $app->put('', function () use ($app) {
@@ -49,7 +49,7 @@ $app->put('', function () use ($app) {
 
 ```
 
-`simatch`
+`simatch` Math all methods routes (GET, POST, PUT and DELETE).
 
 ```php
 $app->match('', function () use ($app) {
@@ -59,7 +59,7 @@ $app->match('', function () use ($app) {
 
 ```
 
-`sidel`
+`sidel` DELETE route.
 
 ```php
 $app->delete('', function () use ($app) {
@@ -71,7 +71,7 @@ $app->delete('', function () use ($app) {
 
 ###Middlewares###
 
-`siafter`
+`siafter` After middleware. Allows tweak the Response before it is sent to the client.
 
 ```php
 $app->after(function (Request $request, Response $response) {
@@ -80,7 +80,7 @@ $app->after(function (Request $request, Response $response) {
 );
 ```
 
-`sibefore`
+`sibefore` Before middleware. Allows tweak the Request before the controller is executed.
 
 ```php
 $app->before(function (Request $request) {
@@ -89,7 +89,7 @@ $app->before(function (Request $request) {
 );
 ```
 
-`sifinish`
+`sifinish` Finish middleware. Allows you execute tasks after the Response has been sent.
 
 ```php
 $app->finish(function (Request $request, Response $response) {
@@ -99,7 +99,7 @@ $app->finish(function (Request $request, Response $response) {
 ```
 ###Providers###
 ####Registering service providers####
-`sidoctrinere`
+`sidoctrinere` Registers DoctrineServiceProvider.
 
 ```php
 $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
@@ -113,7 +113,7 @@ $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
 ));
 ```
 
-`simonologre`
+`simonologre` Registers MonologServiceProvider.
 
 ```php
 $app->register(new Silex\Provider\MonologServiceProvider(), array(
@@ -124,19 +124,19 @@ $app->register(new Silex\Provider\MonologServiceProvider(), array(
 );
 ```
 
-`siserializerre`
+`siserializerre` Registers SerializerServiceProvider.
 
 ```php
 $app->register(new Silex\Provider\SerializerServiceProvider());
 ```
 
-`sisessionre`
+`sisessionre` Registers SessionServiceProvider.
 
 ```php
 $app->register(new Silex\Provider\SessionServiceProvider());
 ```
 
-`simailerre`
+`simailerre` Registers SwiftmailerServiceProvider.
 
 ```php
 $app->register(new Silex\Provider\SwiftmailerServiceProvider(), array(
@@ -151,7 +151,7 @@ $app->register(new Silex\Provider\SwiftmailerServiceProvider(), array(
 ));
 ```
 
-`sitransre`
+`sitransre` Registers TranslationServiceProvider.
 
 ```php
 $app->register(new Silex\Provider\TranslationServiceProvider(), array(
@@ -159,7 +159,7 @@ $app->register(new Silex\Provider\TranslationServiceProvider(), array(
 ));
 ```
 
-`sitwigre`
+`sitwigre` Registers TwigServiceProvider.
 
 ```php
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
@@ -167,13 +167,13 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 ));
 ```
 
-`siurlgere`
+`siurlgere` Registers UrlGeneratorServiceProvider.
 
 ```php
 $app->register(new Silex\Provider\UrlGeneratorServiceProvider());
 ```
 
-`sivalre`
+`sivalre` Registers ValidatorServiceProvider.
 
 ```php
 $app->register(new Silex\Provider\ValidatorServiceProvider());
@@ -181,58 +181,58 @@ $app->register(new Silex\Provider\ValidatorServiceProvider());
 
 ###Services###
 ####Monolog####
-`simonodebug`
+`simonodebug` Creates log entry with 'debug' level.
 
 ```php
 $app['monolog']->addDebug('');
 ```
 
-`simonoerr`
+`simonoerr` Creates log entry with 'error' level.
 
 ```php
 $app['monolog']->addError('');
 ```
 
-`simonoinfo`
+`simonoinfo` Creates log entry with 'info' level.
 
 ```php
 $app['monolog']->addInfo('');
 ```
 
-`simonowarn`
+`simonowarn` Creates log entry with 'warning' level.
 
 ```php
 $app['monolog']->addWarning('');
 ```
 
 ####Serializer####
-`siserialize`
+`siserialize`  Serializes data using an instance of Symfony\Component\Serializer\Serializer.
 
 ```php
 $app['serializer']->serialize(,'');
 ```
 
-`sideserialize`
+`sideserialize` Deserializes data into the given type using an instance of Symfony\Component\Serializer\Serializer.
 
 ```php
 $app['serializer']->deserialize(,'','');
 ```
 
 ####Session####
-`siseget`
+`siseget` Fetchs a value from session storage.
 
 ```php
 $app['session']->get('');
 ```
 
-`siseset`
+`siseset` Stores a value in the session storage.
 
 ```php
 $app['session']->set('',);
 ```
 
 ####Swiftmailer####
-`simailsend`
+`simailsend` Sends a mail.
 
 ```php
 $app['mailer']->send();
@@ -248,7 +248,7 @@ $app['translator']->trans($message,array(
 ```
 
 ####Twig####
-`sitwig`
+`sitwig` Renders a twig file.
 
 ```php
 $app['twig']->render('',array(
@@ -257,7 +257,7 @@ $app['twig']->render('',array(
 ```
 
 ####UrlGenerator####
-`siurlgen`
+`siurlgen` Generates URL for named route.
 
 ```php
 app['url_generator']->generate('',array('' => ''));
