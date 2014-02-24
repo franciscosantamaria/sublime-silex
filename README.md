@@ -180,6 +180,53 @@ $app->register(new Silex\Provider\ValidatorServiceProvider());
 ```
 
 ###Services###
+
+####Service definitions####
+`sise` Creates a new service definition.
+
+```php
+\$app[''] = function() {
+
+};
+```
+
+`sisec` Creates a new service definition, with the container passed as argument.
+
+```php
+\$app[''] = function($app) {
+
+};
+```
+
+####Shared services####
+`sisha` Creates a new shared service definition.
+
+```php
+$app[''] = $app->share(function() {
+
+}
+);
+```
+
+`sishac` Creates a new shared service definition, with the container passed as argument.
+
+```php
+$app[''] = $app->share(function($app) {
+
+}
+);
+```
+
+####Protected services####
+`sipro` Creates a new protected service definition.
+
+```php
+$app[''] = $app->protect(function() {
+
+}
+);
+```
+
 ####Monolog####
 `simonodebug` Creates log entry with 'debug' level.
 

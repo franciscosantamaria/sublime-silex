@@ -1,0 +1,14 @@
+<snippet>
+    <content><![CDATA[
+\$app['$1'] = \$app->share(function(\$app$2) {
+    $3
+}
+);
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>sishac</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.php</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>Create a new shared service definition, with the container passed as argument.</description>
+</snippet>
